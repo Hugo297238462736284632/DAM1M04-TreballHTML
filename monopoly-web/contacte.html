@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - Stellar Odyssey</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacte.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">🚀</div>
+                <h1 class="game-title">Stellar Odyssey</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Inici</a>
+                <a href="instruccions.html" class="nav-link">Instruccions</a>
+                <a href="historia.html" class="nav-link">Història</a>
+                <a href="contacte.html" class="nav-link active">Contacte</a>
+                <a href="about.html" class="nav-link">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <h1 class="page-title">Contacta amb Nosaltres</h1>
+            <p class="page-subtitle">Estem aquí per ajudar-te en la teva odissea espacial</p>
+        </section>
+
+        <section class="contact-info">
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="material-icons">location_on</span>
+                    </div>
+                    <h3>Oficina Central</h3>
+                    <p class="info-detail">Carrer de la Galàxia, 42</p>
+                    <p class="info-detail">08901 L'Hospitalet de Llobregat</p>
+                    <p class="info-detail">Barcelona, Catalunya</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="material-icons">phone</span>
+                    </div>
+                    <h3>Telèfon</h3>
+                    <a href="tel:+34932547890" class="contact-link">
+                        +34 932 547 890
+                    </a>
+                    <p class="info-detail">Dilluns a Divendres</p>
+                    <p class="info-detail">9:00 - 18:00</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <span class="material-icons">email</span>
+                    </div>
+                    <h3>Correu Electrònic</h3>
+                    <a href="mailto:contacte@stellarodyssey.com" class="contact-link">
+                        contacte@stellarodyssey.com
+                    </a>
+                    <a href="mailto:suport@stellarodyssey.com" class="contact-link">
+                        suport@stellarodyssey.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2 class="section-title">On Ens Trobaràs</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.0784537756805!2d2.0992047156748856!3d41.36011207926564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4985e94d6f59d%3A0x8b1b1b1b1b1b1b1b!2sL&#39;Hospitalet%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1sca!2ses!4v1234567890123!5m2!1sca!2ses" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0; border-radius: 20px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <h2 class="section-title">Envia'ns un Missatge</h2>
+            <div class="form-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="material-icons">person</span>
+                                Nom Complet *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                pattern="^[A-Za-zÀ-ÿ\s]{2,50}$"
+                                title="El nom ha de contenir només lletres i espais (2-50 caràcters)"
+                                placeholder="El teu nom complet">
+                            <span class="error-message">El nom ha de contenir només lletres (mínim 2 caràcters)</span>
+                            <span class="success-message">✓ Correcte</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <span class="material-icons">phone</span>
+                                Telèfon *
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                required
+                                pattern="^(\+34|0034|34)?[6789]\d{8}$"
+                                title="Introdueix un telèfon vàlid espanyol"
+                                placeholder="+34 600 000 000">
+                            <span class="error-message">Format: +34 600000000 o 600000000</span>
+                            <span class="success-message">✓ Correcte</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <span class="material-icons">email</span>
+                            Correu Electrònic *
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                            title="Introdueix un correu electrònic vàlid"
+                            placeholder="nom@exemple.com">
+                        <span class="error-message">Introdueix un correu electrònic vàlid</span>
+                        <span class="success-message">✓ Correcte</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">
+                            <span class="material-icons">subject</span>
+                            Assumpte
+                        </label>
+                        <input 
+                            type="text" 
+                            id="subject" 
+                            name="subject" 
+                            pattern="^.{3,100}$"
+                            title="L'assumpte ha de tenir entre 3 i 100 caràcters"
+                            placeholder="Assumpte del missatge">
+                        <span class="error-message">L'assumpte ha de tenir entre 3 i 100 caràcters</span>
+                        <span class="success-message">✓ Correcte</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <span class="material-icons">message</span>
+                            Missatge *
+                        </label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="6" 
+                            required
+                            pattern="^.{10,1000}$"
+                            title="El missatge ha de tenir entre 10 i 1000 caràcters"
+                            placeholder="Escriu el teu missatge aquí..."></textarea>
+                        <span class="error-message">El missatge ha de tenir entre 10 i 1000 caràcters</span>
+                        <span class="success-message">✓ Correcte</span>
+                        <div class="char-counter">
+                            <span id="charCount">0</span> / 1000 caràcters
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span class="checkmark"></span>
+                            <span class="checkbox-text">Accepto la política de privacitat *</span>
+                        </label>
+                        <span class="error-message">Has d'acceptar la política de privacitat</span>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <span class="material-icons">send</span>
+                        Enviar Missatge
+                    </button>
+                </form>
+
+                <div class="form-benefits">
+                    <div class="benefit-item">
+                        <span class="material-icons">access_time</span>
+                        <div>
+                            <h4>Resposta Ràpida</h4>
+                            <p>Contestem en menys de 24 hores</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="material-icons">support_agent</span>
+                        <div>
+                            <h4>Suport Expert</h4>
+                            <p>Equip especialitzat en jocs espacials</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <span class="material-icons">verified_user</span>
+                        <div>
+                            <h4>100% Segur</h4>
+                            <p>Les teves dades estan protegides</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://twitter.com" class="social-icon" aria-label="Twitter">
+                    <span class="material-icons">tag</span>
+                </a>
+                <a href="https://instagram.com" class="social-icon" aria-label="Instagram">
+                    <span class="material-icons">photo_camera</span>
+                </a>
+                <a href="https://facebook.com" class="social-icon" aria-label="Facebook">
+                    <span class="material-icons">thumb_up</span>
+                </a>
+                <a href="https://tiktok.com" class="social-icon" aria-label="TikTok">
+                    <span class="material-icons">music_note</span>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Stellar Odyssey. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

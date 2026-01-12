@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Odyssey - Aventura Espacial Definitiva</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">🚀</div>
+                <h1 class="game-title">Stellar Odyssey</h1>
+            </div>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link active">Inici</a>
+                <a href="instruccions.html" class="nav-link">Instruccions</a>
+                <a href="historia.html" class="nav-link">Història</a>
+                <a href="contacte.html" class="nav-link">Contacte</a>
+                <a href="about.html" class="nav-link">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Explora l'Univers Infinit</h2>
+                    <p class="hero-subtitle">Embarca't en una aventura épica a través de galàxies desconegudes, descobreix planetes aliens i salva la humanitat</p>
+                    <button class="cta-button">Comença l'Aventura</button>
+                </div>
+                <div class="hero-image">
+                    <div class="planet-animation">
+                        <div class="planet"></div>
+                        <div class="ring"></div>
+                        <div class="stars"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="scroll-adventure">
+            <h2 class="section-title">La Teva Aventura</h2>
+            <div class="adventure-timeline">
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-icon">🌍</div>
+                    <div class="timeline-content">
+                        <h3>Inici a la Terra</h3>
+                        <p>El teu viatge comença al planeta natal, on reps la missió més important de la humanitat</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-icon">🛸</div>
+                    <div class="timeline-content">
+                        <h3>Primera Expedició</h3>
+                        <p>Viatja pel sistema solar i descobreix tecnologia alienígena abandonada</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-icon">⚔️</div>
+                    <div class="timeline-content">
+                        <h3>Batalla Espacial</h3>
+                        <p>Enfronta't a pirates espacials i defensa les colònies humanes</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-scroll>
+                    <div class="timeline-icon">🌌</div>
+                    <div class="timeline-content">
+                        <h3>Descobriment Final</h3>
+                        <p>Troba el portal a una nova dimensió i canvia el destí de la humanitat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="svg-animation">
+            <div class="svg-container">
+                <svg viewBox="0 0 500 500" class="animated-svg">
+                    <defs>
+                        <linearGradient id="rocketGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    
+                    <!-- Rocket -->
+                    <g class="rocket" filter="url(#glow)">
+                        <ellipse cx="250" cy="200" rx="30" ry="80" fill="url(#rocketGradient)"/>
+                        <polygon points="250,120 220,200 280,200" fill="#00d4ff"/>
+                        <polygon points="220,200 200,280 220,260" fill="#ff6b35"/>
+                        <polygon points="280,200 300,280 280,260" fill="#ff6b35"/>
+                        <circle cx="250" cy="180" r="12" fill="#fff" opacity="0.8"/>
+                        <circle cx="250" cy="210" r="12" fill="#fff" opacity="0.8"/>
+                    </g>
+                    
+                    <!-- Flames -->
+                    <g class="flames">
+                        <ellipse class="flame" cx="250" cy="280" rx="15" ry="30" fill="#ff6b35" opacity="0.8"/>
+                        <ellipse class="flame" cx="250" cy="290" rx="12" ry="25" fill="#ffd93d" opacity="0.9"/>
+                    </g>
+                    
+                    <!-- Stars -->
+                    <circle class="star" cx="100" cy="100" r="2" fill="#fff"/>
+                    <circle class="star" cx="400" cy="150" r="2" fill="#fff"/>
+                    <circle class="star" cx="150" cy="400" r="2" fill="#fff"/>
+                    <circle class="star" cx="380" cy="380" r="2" fill="#fff"/>
+                    <circle class="star" cx="80" cy="300" r="2" fill="#fff"/>
+                    <circle class="star" cx="420" cy="250" r="2" fill="#fff"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="how-to-play">
+            <h2 class="section-title">Com es juga?</h2>
+            <div class="mechanics-grid">
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🎮</div>
+                    <h3>Controls Intuitius</h3>
+                    <p>Navega amb facilitat utilitzant teclat o gamepad</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">⚡</div>
+                    <h3>Combats Dinàmics</h3>
+                    <p>Sistema de combat en temps real amb combos espectaculars</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🔧</div>
+                    <h3>Millores de Nau</h3>
+                    <p>Personalitza i millora la teva nau espacial</p>
+                </div>
+                <div class="mechanic-card">
+                    <div class="mechanic-icon">🌟</div>
+                    <h3>Exploració Lliure</h3>
+                    <p>Descobreix milers de planetes i secrets ocults</p>
+                </div>
+            </div>
+            <div class="cta-link">
+                <a href="instruccions.html" class="link-button">Veure Instruccions Completes →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://twitter.com" class="social-icon" aria-label="Twitter">
+                    <span class="material-icons">tag</span>
+                </a>
+                <a href="https://instagram.com" class="social-icon" aria-label="Instagram">
+                    <span class="material-icons">photo_camera</span>
+                </a>
+                <a href="https://facebook.com" class="social-icon" aria-label="Facebook">
+                    <span class="material-icons">thumb_up</span>
+                </a>
+                <a href="https://tiktok.com" class="social-icon" aria-label="TikTok">
+                    <span class="material-icons">music_note</span>
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Stellar Odyssey. Tots els drets reservats.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
